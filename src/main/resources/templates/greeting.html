@@ -1,0 +1,13 @@
+<!doctype html>
+
+<!-- O spring usa como método de renderização o Thymeleaf -->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Getting Started: Serving Web Content</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+	<!-- renderiza "name" passado pelo controller -->
+	<p th:text="'Hello, ' + ${name} + '!'" />
+</body>
+</html>
