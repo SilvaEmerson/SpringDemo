@@ -14,10 +14,10 @@ public class Person {
 	@Id
 	// ID foi anotado com @GeneratedValue para indicar que o ID deve ser gerado automaticamente
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	public Long id;
-	public String name;
-	public int age;
-	public String workOn;
+	private Long id;
+	private String name;
+	private int age;
+	private String workOn;
 	
 	protected Person() {}
 	
@@ -33,6 +33,7 @@ public class Person {
 				id, name, age, workOn);
 	}
 	
+	// Getters
 	public Long getId() {
 		return id;
 	}
