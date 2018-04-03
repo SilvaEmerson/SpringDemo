@@ -4,7 +4,7 @@
 
 In the project root, type:  
         `$ gradle bootRun` _or_  
-        `$ gradle build`
+        `$ gradle build` and `$ java -jar /build/libs/SpringDemo.jar`
 
 ## Requirements
 

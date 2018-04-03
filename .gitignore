@@ -4,3 +4,8 @@
 .classpath
 .gradle/
 .settings/
+.idea/
+SpringDemo.iml
+SpringDemo.ipr
+SpringDemo.iws
+out/
