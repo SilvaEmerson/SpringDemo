@@ -15,14 +15,16 @@
 			<th>Name</th>
 			<th>Age</th>
 			<th>Job</th>
+            <td></td>
 		</tr>
 		
-		<tr th:each="person: ${personsList}">
+		<td th:each="person: ${personsList}">
 			<td th:text="${person.getId()}"></td>
 			<td th:text="${person.getName()}"></td>
 			<td th:text="${person.getAge()}"></td>
 			<td th:text="${person.getWorkOn()}"></td>
-		</tr>
+            <td> <a th:href="@{/delete_person(id=${person.getId()})}">DELETE </a> </td>
+        </tr>
 	</table>
 </div>
 </body>

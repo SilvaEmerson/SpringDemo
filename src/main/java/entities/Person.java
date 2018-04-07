@@ -18,35 +18,61 @@ public class Person {
 	private String name;
 	private int age;
 	private String workOn;
-	
-	protected Person() {}
-	
-	public Person(String name, int age, String workOn) {
-		this.name = name;
-		this.age = age;
-		this.workOn = workOn;
-	}
-	
+
+
+	public Person(){}
+
+
+	public Person(String name, int age, String workOn){
+	    this.age = age;
+	    this.name = name;
+	    this.workOn = workOn;
+    }
+
+
 	@Override
 	public String toString() {
-		return String.format("Person[id=%d, name='%s', age=%d, job='%s'",
-				id, name, age, workOn);
+		return String.format("Person[id=%d name='%s', age=%d, job='%s'", id, name, age, workOn);
 	}
-	
-	// Getters
+
+	 //Getters
 	public Long getId() {
 		return id;
 	}
-	
+
+
 	public int getAge() {
 		return age;
 	}
-	
+
+
 	public String getName() {
 		return name;
 	}
-	
+
+
 	public String getWorkOn() {
 		return workOn;
 	}
+
+	//Setters
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+    public void setWorkOn(String workOn) {
+        this.workOn = workOn;
+    }
 }
