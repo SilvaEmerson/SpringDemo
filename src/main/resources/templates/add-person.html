@@ -7,7 +7,7 @@
 <body>
     <h3>Fill the fields with the required information</h3>
 
-    <form action="/persons" th:action="@{/persons}" th:object="${person}" method="post">
+    <form action="#" th:action="@{/persons}" th:object="${person}" method="post">
         <p>Name: <input type="text" th:field="*{name}" /></p>
         <p>Age: <input type="text" th:field="*{age}" /></p>
         <p>Job: <input type="text" th:field="*{workOn}" /></p>

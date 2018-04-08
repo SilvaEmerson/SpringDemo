@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Persons</title>
-
-</head>
+	<meta charset="UTF-8">
+	<title>Persons</title>
+	<html xmlns:th="http://www.thymeleaf.org">
+	</head>
 <body>
 <div th:if="${not #lists.isEmpty(personsList)}">
 	<h2>Persons List</h2>
-	
+
 	<table>
 		<tr>
 			<th>Id</th>
 			<th>Name</th>
 			<th>Age</th>
 			<th>Job</th>
-            <td></td>
+			<th>DELETE</th>
 		</tr>
-		
-		<td th:each="person: ${personsList}">
+
+		<tr th:each="person: ${personsList}">
 			<td th:text="${person.getId()}"></td>
 			<td th:text="${person.getName()}"></td>
 			<td th:text="${person.getAge()}"></td>
 			<td th:text="${person.getWorkOn()}"></td>
             <td> <a th:href="@{/delete_person(id=${person.getId()})}">DELETE </a> </td>
-        </tr>
+		</tr>
 	</table>
 </div>
 </body>

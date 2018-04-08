@@ -32,31 +32,30 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return String.format("Person[id=%d name='%s', age=%d, job='%s'", id, name, age, workOn);
+		return String.format("Person[id=%d name='%s', age=%d, job='%s']", id, name, age, workOn);
 	}
 
 	 //Getters
 	public Long getId() {
-		return id;
+		return this.id;
 	}
 
 
 	public int getAge() {
-		return age;
+		return this.age;
 	}
 
 
 	public String getName() {
-		return name;
+		return this.name;
 	}
 
 
 	public String getWorkOn() {
-		return workOn;
+		return this.workOn;
 	}
 
 	//Setters
-
     public void setId(Long id) {
         this.id = id;
     }
